@@ -25,7 +25,7 @@
                 {% endif %}
                     <h3><a href='{{ obj.get_absolute_url }}'>{{ obj.title }}</a> <small>{{ obj.publish }}</small> </h3>
                     <p>Author: {{ obj.user }}</p>
-                    <p>{{ obj.content | linebreaks | truncatechars:120 }}</p>
+                    <p class="content-markdown">{{ obj.content }}</p>
                     <p><a href='{{ obj.get_absolute_url }}' class="btn btn-primary" role="button">View</a></p>
                 </div>
             </div>
